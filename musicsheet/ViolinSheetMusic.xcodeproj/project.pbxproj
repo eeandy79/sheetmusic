@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E14621E518B9BC3C005A705D /* CircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E14621E418B9BC3C005A705D /* CircularProgressView.m */; };
+		E14621E718B9E148005A705D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14621E618B9E148005A705D /* AVFoundation.framework */; };
+		E187CCAA17EC089400A97E25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E187CCA917EC089400A97E25 /* UIKit.framework */; };
+		E187CCAC17EC089400A97E25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E187CCAB17EC089400A97E25 /* Foundation.framework */; };
+		E187CCAE17EC089400A97E25 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E187CCAD17EC089400A97E25 /* CoreGraphics.framework */; };
+		E187CCB417EC089400A97E25 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E187CCB217EC089400A97E25 /* InfoPlist.strings */; };
+		E187CCB617EC089400A97E25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E187CCB517EC089400A97E25 /* main.m */; };
+		E187CCBA17EC089400A97E25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E187CCB917EC089400A97E25 /* AppDelegate.m */; };
+		E187CCBD17EC089400A97E25 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E187CCBB17EC089400A97E25 /* MainStoryboard_iPhone.storyboard */; };
+		E187CCC017EC089400A97E25 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E187CCBE17EC089400A97E25 /* MainStoryboard_iPad.storyboard */; };
+		E187CCC317EC089400A97E25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E187CCC217EC089400A97E25 /* ViewController.m */; };
+		E187CCCB17EC089400A97E25 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E187CCCA17EC089400A97E25 /* SenTestingKit.framework */; };
+		E187CCCC17EC089400A97E25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E187CCA917EC089400A97E25 /* UIKit.framework */; };
+		E187CCCD17EC089400A97E25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E187CCAB17EC089400A97E25 /* Foundation.framework */; };
+		E187CCD517EC089400A97E25 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E187CCD317EC089400A97E25 /* InfoPlist.strings */; };
+		E187CCD817EC089400A97E25 /* ViolinSheetMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E187CCD717EC089400A97E25 /* ViolinSheetMusicTests.m */; };
+		E187CCE317ECA48A00A97E25 /* ComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E187CCE217ECA48A00A97E25 /* ComposerViewController.m */; };
+		E187CCEC17ECC40B00A97E25 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = E187CCEB17ECC40B00A97E25 /* Score.m */; };
+		E187CCEF17ECC95600A97E25 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E187CCEE17ECC95600A97E25 /* WebViewController.m */; };
+		E187CCF517ED7D8300A97E25 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E187CCF417ED7D8300A97E25 /* libsqlite3.0.dylib */; };
+		E187CD1117EE081F00A97E25 /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E187CD1017EE081F00A97E25 /* ScoreViewController.m */; };
+		E187CD1417EE322C00A97E25 /* mydatabase.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E187CD1317EE322C00A97E25 /* mydatabase.sqlite */; };
+		E19D129317EE36EC00E5B495 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E19D128A17EE36EC00E5B495 /* FMDatabase.m */; };
+		E19D129417EE36EC00E5B495 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E19D128C17EE36EC00E5B495 /* FMDatabaseAdditions.m */; };
+		E19D129517EE36EC00E5B495 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = E19D128E17EE36EC00E5B495 /* FMDatabasePool.m */; };
+		E19D129617EE36EC00E5B495 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E19D129017EE36EC00E5B495 /* FMDatabaseQueue.m */; };
+		E19D129717EE36EC00E5B495 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E19D129217EE36EC00E5B495 /* FMResultSet.m */; };
+		E1A136C717EF03F10000E042 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A136C617EF03F00000E042 /* QuartzCore.framework */; };
+		E1A136C917EF03F80000E042 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A136C817EF03F80000E042 /* ImageIO.framework */; };
+		E1A136CB17EF04000000E042 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A136CA17EF04000000E042 /* MessageUI.framework */; };
+		E1A1370D17EF28E10000E042 /* CGPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A136E617EF28E10000E042 /* CGPDFDocument.m */; };
+		E1A1370E17EF28E10000E042 /* ReaderConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A136E817EF28E10000E042 /* ReaderConstants.m */; };
+		E1A1370F17EF28E10000E042 /* ReaderContentPage.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A136EA17EF28E10000E042 /* ReaderContentPage.m */; };
+		E1A1371017EF28E10000E042 /* ReaderContentTile.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A136EC17EF28E10000E042 /* ReaderContentTile.m */; };
+		E1A1371117EF28E10000E042 /* ReaderContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A136EE17EF28E10000E042 /* ReaderContentView.m */; };
+		E1A1371217EF28E10000E042 /* ReaderDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A136F017EF28E10000E042 /* ReaderDocument.m */; };
+		E1A1371317EF28E10000E042 /* ReaderDocumentOutline.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A136F217EF28E10000E042 /* ReaderDocumentOutline.m */; };
+		E1A1371417EF28E10000E042 /* ReaderMainPagebar.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A136F417EF28E10000E042 /* ReaderMainPagebar.m */; };
+		E1A1371517EF28E10000E042 /* ReaderMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A136F617EF28E10000E042 /* ReaderMainToolbar.m */; };
+		E1A1371617EF28E10000E042 /* ReaderThumbCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A136F817EF28E10000E042 /* ReaderThumbCache.m */; };
+		E1A1371717EF28E10000E042 /* ReaderThumbFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A136FA17EF28E10000E042 /* ReaderThumbFetch.m */; };
+		E1A1371817EF28E10000E042 /* ReaderThumbQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A136FC17EF28E10000E042 /* ReaderThumbQueue.m */; };
+		E1A1371917EF28E10000E042 /* ReaderThumbRender.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A136FE17EF28E10000E042 /* ReaderThumbRender.m */; };
+		E1A1371A17EF28E10000E042 /* ReaderThumbRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1370017EF28E10000E042 /* ReaderThumbRequest.m */; };
+		E1A1371B17EF28E10000E042 /* ReaderThumbsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1370217EF28E10000E042 /* ReaderThumbsView.m */; };
+		E1A1371C17EF28E10000E042 /* ReaderThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1370417EF28E10000E042 /* ReaderThumbView.m */; };
+		E1A1371D17EF28E10000E042 /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1370617EF28E10000E042 /* ReaderViewController.m */; };
+		E1A1371E17EF28E10000E042 /* ThumbsMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1370817EF28E10000E042 /* ThumbsMainToolbar.m */; };
+		E1A1371F17EF28E10000E042 /* ThumbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1370A17EF28E10000E042 /* ThumbsViewController.m */; };
+		E1A1372017EF28E10000E042 /* UIXToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1370C17EF28E10000E042 /* UIXToolbarView.m */; };
+		E1A1372917EF3F470000E042 /* ScoreViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1372817EF3F470000E042 /* ScoreViewCell.m */; };
+		E1A1372F17EF541B0000E042 /* Download.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1372C17EF541B0000E042 /* Download.m */; };
+		E1A1373017EF541B0000E042 /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1372E17EF541B0000E042 /* DownloadManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E187CCCE17EC089400A97E25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E187CC9C17EC089400A97E25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E187CCA417EC089400A97E25;
+			remoteInfo = ViolinSheetMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E14621E318B9BC3C005A705D /* CircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircularProgressView.h; path = ../../../../Downloads/CircularProgressView/CircularProgressView.h; sourceTree = "<group>"; };
+		E14621E418B9BC3C005A705D /* CircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircularProgressView.m; path = ../../../../Downloads/CircularProgressView/CircularProgressView.m; sourceTree = "<group>"; };
+		E14621E618B9E148005A705D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E187CCA517EC089400A97E25 /* ViolinSheetMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViolinSheetMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E187CCA917EC089400A97E25 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E187CCAB17EC089400A97E25 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E187CCAD17EC089400A97E25 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E187CCB117EC089400A97E25 /* ViolinSheetMusic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViolinSheetMusic-Info.plist"; sourceTree = "<group>"; };
+		E187CCB317EC089400A97E25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E187CCB517EC089400A97E25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E187CCB717EC089400A97E25 /* ViolinSheetMusic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViolinSheetMusic-Prefix.pch"; sourceTree = "<group>"; };
+		E187CCB817EC089400A97E25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E187CCB917EC089400A97E25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E187CCBC17EC089400A97E25 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		E187CCBF17EC089400A97E25 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		E187CCC117EC089400A97E25 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E187CCC217EC089400A97E25 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E187CCC917EC089400A97E25 /* ViolinSheetMusicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViolinSheetMusicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E187CCCA17EC089400A97E25 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E187CCD217EC089400A97E25 /* ViolinSheetMusicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViolinSheetMusicTests-Info.plist"; sourceTree = "<group>"; };
+		E187CCD417EC089400A97E25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E187CCD617EC089400A97E25 /* ViolinSheetMusicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViolinSheetMusicTests.h; sourceTree = "<group>"; };
+		E187CCD717EC089400A97E25 /* ViolinSheetMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViolinSheetMusicTests.m; sourceTree = "<group>"; };
+		E187CCE117ECA48A00A97E25 /* ComposerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposerViewController.h; sourceTree = "<group>"; };
+		E187CCE217ECA48A00A97E25 /* ComposerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposerViewController.m; sourceTree = "<group>"; };
+		E187CCEA17ECC40B00A97E25 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		E187CCEB17ECC40B00A97E25 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		E187CCED17ECC95600A97E25 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		E187CCEE17ECC95600A97E25 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		E187CCF417ED7D8300A97E25 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		E187CD0F17EE081F00A97E25 /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
+		E187CD1017EE081F00A97E25 /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
+		E187CD1317EE322C00A97E25 /* mydatabase.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = mydatabase.sqlite; path = ../mydatabase.sqlite; sourceTree = "<group>"; };
+		E19D128917EE36EC00E5B495 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = Fmdb/FMDatabase.h; sourceTree = SOURCE_ROOT; };
+		E19D128A17EE36EC00E5B495 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = Fmdb/FMDatabase.m; sourceTree = SOURCE_ROOT; };
+		E19D128B17EE36EC00E5B495 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = Fmdb/FMDatabaseAdditions.h; sourceTree = SOURCE_ROOT; };
+		E19D128C17EE36EC00E5B495 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = Fmdb/FMDatabaseAdditions.m; sourceTree = SOURCE_ROOT; };
+		E19D128D17EE36EC00E5B495 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = Fmdb/FMDatabasePool.h; sourceTree = SOURCE_ROOT; };
+		E19D128E17EE36EC00E5B495 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = Fmdb/FMDatabasePool.m; sourceTree = SOURCE_ROOT; };
+		E19D128F17EE36EC00E5B495 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = Fmdb/FMDatabaseQueue.h; sourceTree = SOURCE_ROOT; };
+		E19D129017EE36EC00E5B495 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = Fmdb/FMDatabaseQueue.m; sourceTree = SOURCE_ROOT; };
+		E19D129117EE36EC00E5B495 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = Fmdb/FMResultSet.h; sourceTree = SOURCE_ROOT; };
+		E19D129217EE36EC00E5B495 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = Fmdb/FMResultSet.m; sourceTree = SOURCE_ROOT; };
+		E1A136C617EF03F00000E042 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E1A136C817EF03F80000E042 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E1A136CA17EF04000000E042 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		E1A136E517EF28E10000E042 /* CGPDFDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGPDFDocument.h; path = VFRReader/CGPDFDocument.h; sourceTree = SOURCE_ROOT; };
+		E1A136E617EF28E10000E042 /* CGPDFDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGPDFDocument.m; path = VFRReader/CGPDFDocument.m; sourceTree = SOURCE_ROOT; };
+		E1A136E717EF28E10000E042 /* ReaderConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReaderConstants.h; path = VFRReader/ReaderConstants.h; sourceTree = SOURCE_ROOT; };
+		E1A136E817EF28E10000E042 /* ReaderConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderConstants.m; path = VFRReader/ReaderConstants.m; sourceTree = SOURCE_ROOT; };
+		E1A136E917EF28E10000E042 /* ReaderContentPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReaderContentPage.h; path = VFRReader/ReaderContentPage.h; sourceTree = SOURCE_ROOT; };
+		E1A136EA17EF28E10000E042 /* ReaderContentPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderContentPage.m; path = VFRReader/ReaderContentPage.m; sourceTree = SOURCE_ROOT; };
+		E1A136EB17EF28E10000E042 /* ReaderContentTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReaderContentTile.h; path = VFRReader/ReaderContentTile.h; sourceTree = SOURCE_ROOT; };
+		E1A136EC17EF28E10000E042 /* ReaderContentTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderContentTile.m; path = VFRReader/ReaderContentTile.m; sourceTree = SOURCE_ROOT; };
+		E1A136ED17EF28E10000E042 /* ReaderContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReaderContentView.h; path = VFRReader/ReaderContentView.h; sourceTree = SOURCE_ROOT; };
+		E1A136EE17EF28E10000E042 /* ReaderContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderContentView.m; path = VFRReader/ReaderContentView.m; sourceTree = SOURCE_ROOT; };
+		E1A136EF17EF28E10000E042 /* ReaderDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReaderDocument.h; path = VFRReader/ReaderDocument.h; sourceTree = SOURCE_ROOT; };
+		E1A136F017EF28E10000E042 /* ReaderDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderDocument.m; path = VFRReader/ReaderDocument.m; sourceTree = SOURCE_ROOT; };
+		E1A136F117EF28E10000E042 /* ReaderDocumentOutline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReaderDocumentOutline.h; path = VFRReader/ReaderDocumentOutline.h; sourceTree = SOURCE_ROOT; };
+		E1A136F217EF28E10000E042 /* ReaderDocumentOutline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderDocumentOutline.m; path = VFRReader/ReaderDocumentOutline.m; sourceTree = SOURCE_ROOT; };
+		E1A136F317EF28E10000E042 /* ReaderMainPagebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReaderMainPagebar.h; path = VFRReader/ReaderMainPagebar.h; sourceTree = SOURCE_ROOT; };
+		E1A136F417EF28E10000E042 /* ReaderMainPagebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderMainPagebar.m; path = VFRReader/ReaderMainPagebar.m; sourceTree = SOURCE_ROOT; };
+		E1A136F517EF28E10000E042 /* ReaderMainToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReaderMainToolbar.h; path = VFRReader/ReaderMainToolbar.h; sourceTree = SOURCE_ROOT; };
+		E1A136F617EF28E10000E042 /* ReaderMainToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderMainToolbar.m; path = VFRReader/ReaderMainToolbar.m; sourceTree = SOURCE_ROOT; };
+		E1A136F717EF28E10000E042 /* ReaderThumbCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReaderThumbCache.h; path = VFRReader/ReaderThumbCache.h; sourceTree = SOURCE_ROOT; };
+		E1A136F817EF28E10000E042 /* ReaderThumbCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbCache.m; path = VFRReader/ReaderThumbCache.m; sourceTree = SOURCE_ROOT; };
+		E1A136F917EF28E10000E042 /* ReaderThumbFetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReaderThumbFetch.h; path = VFRReader/ReaderThumbFetch.h; sourceTree = SOURCE_ROOT; };
+		E1A136FA17EF28E10000E042 /* ReaderThumbFetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbFetch.m; path = VFRReader/ReaderThumbFetch.m; sourceTree = SOURCE_ROOT; };
+		E1A136FB17EF28E10000E042 /* ReaderThumbQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReaderThumbQueue.h; path = VFRReader/ReaderThumbQueue.h; sourceTree = SOURCE_ROOT; };
+		E1A136FC17EF28E10000E042 /* ReaderThumbQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbQueue.m; path = VFRReader/ReaderThumbQueue.m; sourceTree = SOURCE_ROOT; };
+		E1A136FD17EF28E10000E042 /* ReaderThumbRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReaderThumbRender.h; path = VFRReader/ReaderThumbRender.h; sourceTree = SOURCE_ROOT; };
+		E1A136FE17EF28E10000E042 /* ReaderThumbRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbRender.m; path = VFRReader/ReaderThumbRender.m; sourceTree = SOURCE_ROOT; };
+		E1A136FF17EF28E10000E042 /* ReaderThumbRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReaderThumbRequest.h; path = VFRReader/ReaderThumbRequest.h; sourceTree = SOURCE_ROOT; };
+		E1A1370017EF28E10000E042 /* ReaderThumbRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbRequest.m; path = VFRReader/ReaderThumbRequest.m; sourceTree = SOURCE_ROOT; };
+		E1A1370117EF28E10000E042 /* ReaderThumbsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReaderThumbsView.h; path = VFRReader/ReaderThumbsView.h; sourceTree = SOURCE_ROOT; };
+		E1A1370217EF28E10000E042 /* ReaderThumbsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbsView.m; path = VFRReader/ReaderThumbsView.m; sourceTree = SOURCE_ROOT; };
+		E1A1370317EF28E10000E042 /* ReaderThumbView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReaderThumbView.h; path = VFRReader/ReaderThumbView.h; sourceTree = SOURCE_ROOT; };
+		E1A1370417EF28E10000E042 /* ReaderThumbView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbView.m; path = VFRReader/ReaderThumbView.m; sourceTree = SOURCE_ROOT; };
+		E1A1370517EF28E10000E042 /* ReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReaderViewController.h; path = VFRReader/ReaderViewController.h; sourceTree = SOURCE_ROOT; };
+		E1A1370617EF28E10000E042 /* ReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderViewController.m; path = VFRReader/ReaderViewController.m; sourceTree = SOURCE_ROOT; };
+		E1A1370717EF28E10000E042 /* ThumbsMainToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThumbsMainToolbar.h; path = VFRReader/ThumbsMainToolbar.h; sourceTree = SOURCE_ROOT; };
+		E1A1370817EF28E10000E042 /* ThumbsMainToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThumbsMainToolbar.m; path = VFRReader/ThumbsMainToolbar.m; sourceTree = SOURCE_ROOT; };
+		E1A1370917EF28E10000E042 /* ThumbsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThumbsViewController.h; path = VFRReader/ThumbsViewController.h; sourceTree = SOURCE_ROOT; };
+		E1A1370A17EF28E10000E042 /* ThumbsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThumbsViewController.m; path = VFRReader/ThumbsViewController.m; sourceTree = SOURCE_ROOT; };
+		E1A1370B17EF28E10000E042 /* UIXToolbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXToolbarView.h; path = VFRReader/UIXToolbarView.h; sourceTree = SOURCE_ROOT; };
+		E1A1370C17EF28E10000E042 /* UIXToolbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIXToolbarView.m; path = VFRReader/UIXToolbarView.m; sourceTree = SOURCE_ROOT; };
+		E1A1372717EF3F470000E042 /* ScoreViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewCell.h; sourceTree = "<group>"; };
+		E1A1372817EF3F470000E042 /* ScoreViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewCell.m; sourceTree = "<group>"; };
+		E1A1372B17EF541B0000E042 /* Download.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Download.h; sourceTree = "<group>"; };
+		E1A1372C17EF541B0000E042 /* Download.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Download.m; sourceTree = "<group>"; };
+		E1A1372D17EF541B0000E042 /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		E1A1372E17EF541B0000E042 /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E187CCA217EC089400A97E25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E14621E718B9E148005A705D /* AVFoundation.framework in Frameworks */,
+				E1A136CB17EF04000000E042 /* MessageUI.framework in Frameworks */,
+				E1A136C917EF03F80000E042 /* ImageIO.framework in Frameworks */,
+				E1A136C717EF03F10000E042 /* QuartzCore.framework in Frameworks */,
+				E187CCF517ED7D8300A97E25 /* libsqlite3.0.dylib in Frameworks */,
+				E187CCAA17EC089400A97E25 /* UIKit.framework in Frameworks */,
+				E187CCAC17EC089400A97E25 /* Foundation.framework in Frameworks */,
+				E187CCAE17EC089400A97E25 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E187CCC517EC089400A97E25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E187CCCB17EC089400A97E25 /* SenTestingKit.framework in Frameworks */,
+				E187CCCC17EC089400A97E25 /* UIKit.framework in Frameworks */,
+				E187CCCD17EC089400A97E25 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E14621E218B9BB22005A705D /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				E14621E318B9BC3C005A705D /* CircularProgressView.h */,
+				E14621E418B9BC3C005A705D /* CircularProgressView.m */,
+			);
+			name = Progress;
+			sourceTree = "<group>";
+		};
+		E187CC9A17EC089400A97E25 = {
+			isa = PBXGroup;
+			children = (
+				E14621E618B9E148005A705D /* AVFoundation.framework */,
+				E187CCAF17EC089400A97E25 /* ViolinSheetMusic */,
+				E187CCD017EC089400A97E25 /* ViolinSheetMusicTests */,
+				E187CCA817EC089400A97E25 /* Frameworks */,
+				E187CCA617EC089400A97E25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E187CCA617EC089400A97E25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E187CCA517EC089400A97E25 /* ViolinSheetMusic.app */,
+				E187CCC917EC089400A97E25 /* ViolinSheetMusicTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E187CCA817EC089400A97E25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E187CCF417ED7D8300A97E25 /* libsqlite3.0.dylib */,
+				E1A136CA17EF04000000E042 /* MessageUI.framework */,
+				E1A136C817EF03F80000E042 /* ImageIO.framework */,
+				E1A136C617EF03F00000E042 /* QuartzCore.framework */,
+				E187CCA917EC089400A97E25 /* UIKit.framework */,
+				E187CCAB17EC089400A97E25 /* Foundation.framework */,
+				E187CCAD17EC089400A97E25 /* CoreGraphics.framework */,
+				E187CCCA17EC089400A97E25 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E187CCAF17EC089400A97E25 /* ViolinSheetMusic */ = {
+			isa = PBXGroup;
+			children = (
+				E187CCB817EC089400A97E25 /* AppDelegate.h */,
+				E187CCB917EC089400A97E25 /* AppDelegate.m */,
+				E187CCBB17EC089400A97E25 /* MainStoryboard_iPhone.storyboard */,
+				E187CCBE17EC089400A97E25 /* MainStoryboard_iPad.storyboard */,
+				E187CD0F17EE081F00A97E25 /* ScoreViewController.h */,
+				E187CD1017EE081F00A97E25 /* ScoreViewController.m */,
+				E1A1372717EF3F470000E042 /* ScoreViewCell.h */,
+				E1A1372817EF3F470000E042 /* ScoreViewCell.m */,
+				E187CCED17ECC95600A97E25 /* WebViewController.h */,
+				E187CCEE17ECC95600A97E25 /* WebViewController.m */,
+				E187CCEA17ECC40B00A97E25 /* Score.h */,
+				E187CCEB17ECC40B00A97E25 /* Score.m */,
+				E187CCE117ECA48A00A97E25 /* ComposerViewController.h */,
+				E187CCE217ECA48A00A97E25 /* ComposerViewController.m */,
+				E187CCC117EC089400A97E25 /* ViewController.h */,
+				E187CCC217EC089400A97E25 /* ViewController.m */,
+				E187CCB017EC089400A97E25 /* Supporting Files */,
+			);
+			path = ViolinSheetMusic;
+			sourceTree = "<group>";
+		};
+		E187CCB017EC089400A97E25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E14621E218B9BB22005A705D /* Progress */,
+				E1A1372A17EF541B0000E042 /* DownloadManager */,
+				E1A136E417EF28CE0000E042 /* VFRReader */,
+				E187CD1217EE2D5B00A97E25 /* FMDatabase */,
+				E187CCB117EC089400A97E25 /* ViolinSheetMusic-Info.plist */,
+				E187CCB217EC089400A97E25 /* InfoPlist.strings */,
+				E187CD1317EE322C00A97E25 /* mydatabase.sqlite */,
+				E187CCB517EC089400A97E25 /* main.m */,
+				E187CCB717EC089400A97E25 /* ViolinSheetMusic-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E187CCD017EC089400A97E25 /* ViolinSheetMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				E187CCD617EC089400A97E25 /* ViolinSheetMusicTests.h */,
+				E187CCD717EC089400A97E25 /* ViolinSheetMusicTests.m */,
+				E187CCD117EC089400A97E25 /* Supporting Files */,
+			);
+			path = ViolinSheetMusicTests;
+			sourceTree = "<group>";
+		};
+		E187CCD117EC089400A97E25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E187CCD217EC089400A97E25 /* ViolinSheetMusicTests-Info.plist */,
+				E187CCD317EC089400A97E25 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E187CD1217EE2D5B00A97E25 /* FMDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				E19D128917EE36EC00E5B495 /* FMDatabase.h */,
+				E19D128A17EE36EC00E5B495 /* FMDatabase.m */,
+				E19D128B17EE36EC00E5B495 /* FMDatabaseAdditions.h */,
+				E19D128C17EE36EC00E5B495 /* FMDatabaseAdditions.m */,
+				E19D128D17EE36EC00E5B495 /* FMDatabasePool.h */,
+				E19D128E17EE36EC00E5B495 /* FMDatabasePool.m */,
+				E19D128F17EE36EC00E5B495 /* FMDatabaseQueue.h */,
+				E19D129017EE36EC00E5B495 /* FMDatabaseQueue.m */,
+				E19D129117EE36EC00E5B495 /* FMResultSet.h */,
+				E19D129217EE36EC00E5B495 /* FMResultSet.m */,
+			);
+			name = FMDatabase;
+			sourceTree = "<group>";
+		};
+		E1A136E417EF28CE0000E042 /* VFRReader */ = {
+			isa = PBXGroup;
+			children = (
+				E1A1372517EF35450000E042 /* Support */,
+				E1A1370517EF28E10000E042 /* ReaderViewController.h */,
+				E1A1370617EF28E10000E042 /* ReaderViewController.m */,
+			);
+			name = VFRReader;
+			sourceTree = "<group>";
+		};
+		E1A1372517EF35450000E042 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E1A1370717EF28E10000E042 /* ThumbsMainToolbar.h */,
+				E1A1370817EF28E10000E042 /* ThumbsMainToolbar.m */,
+				E1A1370917EF28E10000E042 /* ThumbsViewController.h */,
+				E1A1370A17EF28E10000E042 /* ThumbsViewController.m */,
+				E1A1370B17EF28E10000E042 /* UIXToolbarView.h */,
+				E1A1370C17EF28E10000E042 /* UIXToolbarView.m */,
+				E1A136F217EF28E10000E042 /* ReaderDocumentOutline.m */,
+				E1A136F317EF28E10000E042 /* ReaderMainPagebar.h */,
+				E1A136F417EF28E10000E042 /* ReaderMainPagebar.m */,
+				E1A136F517EF28E10000E042 /* ReaderMainToolbar.h */,
+				E1A136F617EF28E10000E042 /* ReaderMainToolbar.m */,
+				E1A136F717EF28E10000E042 /* ReaderThumbCache.h */,
+				E1A136F817EF28E10000E042 /* ReaderThumbCache.m */,
+				E1A136F917EF28E10000E042 /* ReaderThumbFetch.h */,
+				E1A136FA17EF28E10000E042 /* ReaderThumbFetch.m */,
+				E1A136FB17EF28E10000E042 /* ReaderThumbQueue.h */,
+				E1A136FC17EF28E10000E042 /* ReaderThumbQueue.m */,
+				E1A136FD17EF28E10000E042 /* ReaderThumbRender.h */,
+				E1A136FE17EF28E10000E042 /* ReaderThumbRender.m */,
+				E1A136FF17EF28E10000E042 /* ReaderThumbRequest.h */,
+				E1A1370017EF28E10000E042 /* ReaderThumbRequest.m */,
+				E1A1370117EF28E10000E042 /* ReaderThumbsView.h */,
+				E1A1370217EF28E10000E042 /* ReaderThumbsView.m */,
+				E1A1370317EF28E10000E042 /* ReaderThumbView.h */,
+				E1A1370417EF28E10000E042 /* ReaderThumbView.m */,
+				E1A136E517EF28E10000E042 /* CGPDFDocument.h */,
+				E1A136E617EF28E10000E042 /* CGPDFDocument.m */,
+				E1A136E717EF28E10000E042 /* ReaderConstants.h */,
+				E1A136E817EF28E10000E042 /* ReaderConstants.m */,
+				E1A136E917EF28E10000E042 /* ReaderContentPage.h */,
+				E1A136EA17EF28E10000E042 /* ReaderContentPage.m */,
+				E1A136EB17EF28E10000E042 /* ReaderContentTile.h */,
+				E1A136EC17EF28E10000E042 /* ReaderContentTile.m */,
+				E1A136ED17EF28E10000E042 /* ReaderContentView.h */,
+				E1A136EE17EF28E10000E042 /* ReaderContentView.m */,
+				E1A136EF17EF28E10000E042 /* ReaderDocument.h */,
+				E1A136F017EF28E10000E042 /* ReaderDocument.m */,
+				E1A136F117EF28E10000E042 /* ReaderDocumentOutline.h */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		E1A1372A17EF541B0000E042 /* DownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				E1A1372B17EF541B0000E042 /* Download.h */,
+				E1A1372C17EF541B0000E042 /* Download.m */,
+				E1A1372D17EF541B0000E042 /* DownloadManager.h */,
+				E1A1372E17EF541B0000E042 /* DownloadManager.m */,
+			);
+			path = DownloadManager;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E187CCA417EC089400A97E25 /* ViolinSheetMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E187CCDB17EC089400A97E25 /* Build configuration list for PBXNativeTarget "ViolinSheetMusic" */;
+			buildPhases = (
+				E187CCA117EC089400A97E25 /* Sources */,
+				E187CCA217EC089400A97E25 /* Frameworks */,
+				E187CCA317EC089400A97E25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViolinSheetMusic;
+			productName = ViolinSheetMusic;
+			productReference = E187CCA517EC089400A97E25 /* ViolinSheetMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E187CCC817EC089400A97E25 /* ViolinSheetMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E187CCDE17EC089400A97E25 /* Build configuration list for PBXNativeTarget "ViolinSheetMusicTests" */;
+			buildPhases = (
+				E187CCC417EC089400A97E25 /* Sources */,
+				E187CCC517EC089400A97E25 /* Frameworks */,
+				E187CCC617EC089400A97E25 /* Resources */,
+				E187CCC717EC089400A97E25 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E187CCCF17EC089400A97E25 /* PBXTargetDependency */,
+			);
+			name = ViolinSheetMusicTests;
+			productName = ViolinSheetMusicTests;
+			productReference = E187CCC917EC089400A97E25 /* ViolinSheetMusicTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E187CC9C17EC089400A97E25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = E187CC9F17EC089400A97E25 /* Build configuration list for PBXProject "ViolinSheetMusic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E187CC9A17EC089400A97E25;
+			productRefGroup = E187CCA617EC089400A97E25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E187CCA417EC089400A97E25 /* ViolinSheetMusic */,
+				E187CCC817EC089400A97E25 /* ViolinSheetMusicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E187CCA317EC089400A97E25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E187CCB417EC089400A97E25 /* InfoPlist.strings in Resources */,
+				E187CCBD17EC089400A97E25 /* MainStoryboard_iPhone.storyboard in Resources */,
+				E187CCC017EC089400A97E25 /* MainStoryboard_iPad.storyboard in Resources */,
+				E187CD1417EE322C00A97E25 /* mydatabase.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E187CCC617EC089400A97E25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E187CCD517EC089400A97E25 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E187CCC717EC089400A97E25 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E187CCA117EC089400A97E25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E187CCB617EC089400A97E25 /* main.m in Sources */,
+				E187CCBA17EC089400A97E25 /* AppDelegate.m in Sources */,
+				E187CCC317EC089400A97E25 /* ViewController.m in Sources */,
+				E187CCE317ECA48A00A97E25 /* ComposerViewController.m in Sources */,
+				E187CCEC17ECC40B00A97E25 /* Score.m in Sources */,
+				E187CCEF17ECC95600A97E25 /* WebViewController.m in Sources */,
+				E187CD1117EE081F00A97E25 /* ScoreViewController.m in Sources */,
+				E19D129317EE36EC00E5B495 /* FMDatabase.m in Sources */,
+				E19D129417EE36EC00E5B495 /* FMDatabaseAdditions.m in Sources */,
+				E19D129517EE36EC00E5B495 /* FMDatabasePool.m in Sources */,
+				E19D129617EE36EC00E5B495 /* FMDatabaseQueue.m in Sources */,
+				E19D129717EE36EC00E5B495 /* FMResultSet.m in Sources */,
+				E1A1370D17EF28E10000E042 /* CGPDFDocument.m in Sources */,
+				E1A1370E17EF28E10000E042 /* ReaderConstants.m in Sources */,
+				E1A1370F17EF28E10000E042 /* ReaderContentPage.m in Sources */,
+				E1A1371017EF28E10000E042 /* ReaderContentTile.m in Sources */,
+				E1A1371117EF28E10000E042 /* ReaderContentView.m in Sources */,
+				E1A1371217EF28E10000E042 /* ReaderDocument.m in Sources */,
+				E1A1371317EF28E10000E042 /* ReaderDocumentOutline.m in Sources */,
+				E1A1371417EF28E10000E042 /* ReaderMainPagebar.m in Sources */,
+				E1A1371517EF28E10000E042 /* ReaderMainToolbar.m in Sources */,
+				E1A1371617EF28E10000E042 /* ReaderThumbCache.m in Sources */,
+				E1A1371717EF28E10000E042 /* ReaderThumbFetch.m in Sources */,
+				E1A1371817EF28E10000E042 /* ReaderThumbQueue.m in Sources */,
+				E1A1371917EF28E10000E042 /* ReaderThumbRender.m in Sources */,
+				E1A1371A17EF28E10000E042 /* ReaderThumbRequest.m in Sources */,
+				E1A1371B17EF28E10000E042 /* ReaderThumbsView.m in Sources */,
+				E1A1371C17EF28E10000E042 /* ReaderThumbView.m in Sources */,
+				E1A1371D17EF28E10000E042 /* ReaderViewController.m in Sources */,
+				E1A1371E17EF28E10000E042 /* ThumbsMainToolbar.m in Sources */,
+				E1A1371F17EF28E10000E042 /* ThumbsViewController.m in Sources */,
+				E1A1372017EF28E10000E042 /* UIXToolbarView.m in Sources */,
+				E1A1372917EF3F470000E042 /* ScoreViewCell.m in Sources */,
+				E1A1372F17EF541B0000E042 /* Download.m in Sources */,
+				E1A1373017EF541B0000E042 /* DownloadManager.m in Sources */,
+				E14621E518B9BC3C005A705D /* CircularProgressView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E187CCC417EC089400A97E25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E187CCD817EC089400A97E25 /* ViolinSheetMusicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E187CCCF17EC089400A97E25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E187CCA417EC089400A97E25 /* ViolinSheetMusic */;
+			targetProxy = E187CCCE17EC089400A97E25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E187CCB217EC089400A97E25 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E187CCB317EC089400A97E25 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E187CCBB17EC089400A97E25 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E187CCBC17EC089400A97E25 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		E187CCBE17EC089400A97E25 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E187CCBF17EC089400A97E25 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		E187CCD317EC089400A97E25 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E187CCD417EC089400A97E25 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E187CCD917EC089400A97E25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E187CCDA17EC089400A97E25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E187CCDC17EC089400A97E25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ViolinSheetMusic/ViolinSheetMusic-Prefix.pch";
+				INFOPLIST_FILE = "ViolinSheetMusic/ViolinSheetMusic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E187CCDD17EC089400A97E25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ViolinSheetMusic/ViolinSheetMusic-Prefix.pch";
+				INFOPLIST_FILE = "ViolinSheetMusic/ViolinSheetMusic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E187CCDF17EC089400A97E25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ViolinSheetMusic.app/ViolinSheetMusic";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ViolinSheetMusic/ViolinSheetMusic-Prefix.pch";
+				INFOPLIST_FILE = "ViolinSheetMusicTests/ViolinSheetMusicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E187CCE017EC089400A97E25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ViolinSheetMusic.app/ViolinSheetMusic";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ViolinSheetMusic/ViolinSheetMusic-Prefix.pch";
+				INFOPLIST_FILE = "ViolinSheetMusicTests/ViolinSheetMusicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E187CC9F17EC089400A97E25 /* Build configuration list for PBXProject "ViolinSheetMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E187CCD917EC089400A97E25 /* Debug */,
+				E187CCDA17EC089400A97E25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E187CCDB17EC089400A97E25 /* Build configuration list for PBXNativeTarget "ViolinSheetMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E187CCDC17EC089400A97E25 /* Debug */,
+				E187CCDD17EC089400A97E25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E187CCDE17EC089400A97E25 /* Build configuration list for PBXNativeTarget "ViolinSheetMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E187CCDF17EC089400A97E25 /* Debug */,
+				E187CCE017EC089400A97E25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E187CC9C17EC089400A97E25 /* Project object */;
+}

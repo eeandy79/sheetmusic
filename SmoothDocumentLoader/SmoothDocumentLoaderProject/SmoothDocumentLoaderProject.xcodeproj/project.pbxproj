@@ -1,0 +1,276 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		778CD5ED14ECE42D006F9EFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778CD5EC14ECE42D006F9EFD /* UIKit.framework */; };
+		778CD5EF14ECE42D006F9EFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778CD5EE14ECE42D006F9EFD /* Foundation.framework */; };
+		778CD5F114ECE42D006F9EFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778CD5F014ECE42D006F9EFD /* CoreGraphics.framework */; };
+		778CD5F714ECE42D006F9EFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 778CD5F514ECE42D006F9EFD /* InfoPlist.strings */; };
+		778CD5F914ECE42D006F9EFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 778CD5F814ECE42D006F9EFD /* main.m */; };
+		778CD5FD14ECE42D006F9EFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 778CD5FC14ECE42D006F9EFD /* AppDelegate.m */; };
+		778CD60614ECE43A006F9EFD /* FIleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778CD60414ECE43A006F9EFD /* FIleListViewController.m */; };
+		778CD60714ECE43A006F9EFD /* FIleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 778CD60514ECE43A006F9EFD /* FIleListViewController.xib */; };
+		778CD60C14ECEAB1006F9EFD /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778CD60B14ECEAB1006F9EFD /* QuickLook.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		778CD5E814ECE42D006F9EFD /* SmoothDocumentLoaderProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoothDocumentLoaderProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		778CD5EC14ECE42D006F9EFD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		778CD5EE14ECE42D006F9EFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		778CD5F014ECE42D006F9EFD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		778CD5F414ECE42D006F9EFD /* SmoothDocumentLoaderProject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmoothDocumentLoaderProject-Info.plist"; sourceTree = "<group>"; };
+		778CD5F614ECE42D006F9EFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		778CD5F814ECE42D006F9EFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		778CD5FA14ECE42D006F9EFD /* SmoothDocumentLoaderProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmoothDocumentLoaderProject-Prefix.pch"; sourceTree = "<group>"; };
+		778CD5FB14ECE42D006F9EFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		778CD5FC14ECE42D006F9EFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		778CD60314ECE43A006F9EFD /* FIleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIleListViewController.h; sourceTree = "<group>"; };
+		778CD60414ECE43A006F9EFD /* FIleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIleListViewController.m; sourceTree = "<group>"; };
+		778CD60514ECE43A006F9EFD /* FIleListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FIleListViewController.xib; sourceTree = "<group>"; };
+		778CD60B14ECEAB1006F9EFD /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		778CD5E514ECE42D006F9EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				778CD60C14ECEAB1006F9EFD /* QuickLook.framework in Frameworks */,
+				778CD5ED14ECE42D006F9EFD /* UIKit.framework in Frameworks */,
+				778CD5EF14ECE42D006F9EFD /* Foundation.framework in Frameworks */,
+				778CD5F114ECE42D006F9EFD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		778CD5DD14ECE42D006F9EFD = {
+			isa = PBXGroup;
+			children = (
+				778CD5F214ECE42D006F9EFD /* SmoothDocumentLoaderProject */,
+				778CD5EB14ECE42D006F9EFD /* Frameworks */,
+				778CD5E914ECE42D006F9EFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		778CD5E914ECE42D006F9EFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				778CD5E814ECE42D006F9EFD /* SmoothDocumentLoaderProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		778CD5EB14ECE42D006F9EFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				778CD60B14ECEAB1006F9EFD /* QuickLook.framework */,
+				778CD5EC14ECE42D006F9EFD /* UIKit.framework */,
+				778CD5EE14ECE42D006F9EFD /* Foundation.framework */,
+				778CD5F014ECE42D006F9EFD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		778CD5F214ECE42D006F9EFD /* SmoothDocumentLoaderProject */ = {
+			isa = PBXGroup;
+			children = (
+				778CD5FB14ECE42D006F9EFD /* AppDelegate.h */,
+				778CD5FC14ECE42D006F9EFD /* AppDelegate.m */,
+				778CD5F314ECE42D006F9EFD /* Supporting Files */,
+				778CD60314ECE43A006F9EFD /* FIleListViewController.h */,
+				778CD60414ECE43A006F9EFD /* FIleListViewController.m */,
+				778CD60514ECE43A006F9EFD /* FIleListViewController.xib */,
+			);
+			path = SmoothDocumentLoaderProject;
+			sourceTree = "<group>";
+		};
+		778CD5F314ECE42D006F9EFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				778CD5F414ECE42D006F9EFD /* SmoothDocumentLoaderProject-Info.plist */,
+				778CD5F514ECE42D006F9EFD /* InfoPlist.strings */,
+				778CD5F814ECE42D006F9EFD /* main.m */,
+				778CD5FA14ECE42D006F9EFD /* SmoothDocumentLoaderProject-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		778CD5E714ECE42D006F9EFD /* SmoothDocumentLoaderProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 778CD60014ECE42D006F9EFD /* Build configuration list for PBXNativeTarget "SmoothDocumentLoaderProject" */;
+			buildPhases = (
+				778CD5E414ECE42D006F9EFD /* Sources */,
+				778CD5E514ECE42D006F9EFD /* Frameworks */,
+				778CD5E614ECE42D006F9EFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmoothDocumentLoaderProject;
+			productName = SmoothDocumentLoaderProject;
+			productReference = 778CD5E814ECE42D006F9EFD /* SmoothDocumentLoaderProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		778CD5DF14ECE42D006F9EFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = QUAGNITIA;
+			};
+			buildConfigurationList = 778CD5E214ECE42D006F9EFD /* Build configuration list for PBXProject "SmoothDocumentLoaderProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 778CD5DD14ECE42D006F9EFD;
+			productRefGroup = 778CD5E914ECE42D006F9EFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				778CD5E714ECE42D006F9EFD /* SmoothDocumentLoaderProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		778CD5E614ECE42D006F9EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				778CD5F714ECE42D006F9EFD /* InfoPlist.strings in Resources */,
+				778CD60714ECE43A006F9EFD /* FIleListViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		778CD5E414ECE42D006F9EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				778CD5F914ECE42D006F9EFD /* main.m in Sources */,
+				778CD5FD14ECE42D006F9EFD /* AppDelegate.m in Sources */,
+				778CD60614ECE43A006F9EFD /* FIleListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		778CD5F514ECE42D006F9EFD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				778CD5F614ECE42D006F9EFD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		778CD5FE14ECE42D006F9EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		778CD5FF14ECE42D006F9EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		778CD60114ECE42D006F9EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmoothDocumentLoaderProject/SmoothDocumentLoaderProject-Prefix.pch";
+				INFOPLIST_FILE = "SmoothDocumentLoaderProject/SmoothDocumentLoaderProject-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		778CD60214ECE42D006F9EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmoothDocumentLoaderProject/SmoothDocumentLoaderProject-Prefix.pch";
+				INFOPLIST_FILE = "SmoothDocumentLoaderProject/SmoothDocumentLoaderProject-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		778CD5E214ECE42D006F9EFD /* Build configuration list for PBXProject "SmoothDocumentLoaderProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				778CD5FE14ECE42D006F9EFD /* Debug */,
+				778CD5FF14ECE42D006F9EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		778CD60014ECE42D006F9EFD /* Build configuration list for PBXNativeTarget "SmoothDocumentLoaderProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				778CD60114ECE42D006F9EFD /* Debug */,
+				778CD60214ECE42D006F9EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 778CD5DF14ECE42D006F9EFD /* Project object */;
+}

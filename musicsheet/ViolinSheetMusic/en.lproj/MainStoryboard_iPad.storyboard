@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="5Dg-27-CKj">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Gesture-->
+        <scene sceneID="vEW-Mc-dfs">
+            <objects>
+                <viewController id="v52-uo-sEa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZvG-GF-3rn">
+                        <rect key="frame" x="0.0" y="20" width="768" height="955"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="tab 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" id="Xx7-o2-mQm">
+                                <rect key="frame" x="57" y="234" width="330" height="286"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="100"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gesture" id="m7z-if-BKE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ds-JO-V5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="-1426"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Q03-Dt-tGp">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="5Dg-27-CKj" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="vvb-gn-SQb">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fiY-FQ-wa3" kind="relationship" relationship="viewControllers" id="zkk-C0-xLv"/>
+                        <segue destination="v52-uo-sEa" kind="relationship" relationship="viewControllers" id="m53-7D-PBu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CjK-mZ-kAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-652" y="-2080"/>
+        </scene>
+        <!--Composer View Controller - Composer-->
+        <scene sceneID="3b4-l6-nnH">
+            <objects>
+                <tableViewController id="zaF-a6-XbN" customClass="ComposerViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gOz-95-jNB">
+                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="e2n-YT-w9g">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="zaF-a6-XbN" id="h1a-7i-vRm"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PlayerCell" textLabel="jW0-82-xKi" style="IBUITableViewCellStyleDefault" id="4ql-um-Hih">
+                                <rect key="frame" x="0.0" y="66" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="748" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jW0-82-xKi">
+                                            <rect key="frame" x="10" y="0.0" width="728" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="zaF-a6-XbN" id="GxG-uT-EsM"/>
+                            <outlet property="delegate" destination="zaF-a6-XbN" id="A9b-Tq-bRE"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Composer" id="uOd-Dc-NQ8"/>
+                    <connections>
+                        <outlet property="composerSearchBar" destination="e2n-YT-w9g" id="ZAa-yz-QX3"/>
+                        <outlet property="searchDisplayController" destination="WAY-zy-fpd" id="RiC-Gc-urp"/>
+                        <segue destination="MN3-cP-ORk" kind="push" identifier="ComposerSegue" id="sg0-Lj-jWZ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d1Q-pN-cNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="WAY-zy-fpd">
+                    <connections>
+                        <outlet property="delegate" destination="zaF-a6-XbN" id="VvC-yf-8Ny"/>
+                        <outlet property="searchBar" destination="e2n-YT-w9g" id="2t3-kK-KLL"/>
+                        <outlet property="searchContentsController" destination="zaF-a6-XbN" id="jaj-FF-25r"/>
+                        <outlet property="searchResultsDataSource" destination="zaF-a6-XbN" id="T0Z-UJ-qLV"/>
+                        <outlet property="searchResultsDelegate" destination="zaF-a6-XbN" id="lbb-79-9FU"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1360" y="-2568"/>
+        </scene>
+        <!--Score View Controller - Score List-->
+        <scene sceneID="qzc-j5-GW2">
+            <objects>
+                <tableViewController id="MN3-cP-ORk" customClass="ScoreViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="GvR-on-hWh">
+                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ScoreViewCell" id="EEm-5a-Sel" customClass="ScoreViewCell">
+                                <rect key="frame" x="0.0" y="22" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="748" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Bk0-cp-7ut">
+                                            <rect key="frame" x="20" y="0.0" width="700" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" progressViewStyle="bar" progress="0.5" id="3G8-Gz-QCH">
+                                            <rect key="frame" x="555" y="17" width="150" height="11"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </progressView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="progress" destination="3G8-Gz-QCH" id="sYE-WA-dCT"/>
+                                    <outlet property="title" destination="Bk0-cp-7ut" id="NhX-er-fcK"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MN3-cP-ORk" id="Zv7-cE-j05"/>
+                            <outlet property="delegate" destination="MN3-cP-ORk" id="xNX-U1-C6a"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Score List" id="GlF-r4-QYX"/>
+                    <connections>
+                        <segue destination="TE0-jA-H2q" kind="modal" identifier="ScoreSegue" modalTransitionStyle="flipHorizontal" id="FOX-6U-goj"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wad-zo-abE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2360" y="-2569"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="5zQ-YX-raA">
+            <objects>
+                <viewController id="HHP-Rz-H4b" customClass="WebViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zbg-Ut-LZ1">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" id="QYn-V6-JXR" customClass="Score">
+                                <rect key="frame" x="0.0" y="59" width="768" height="945"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VtA-PX-QaO">
+                                <rect key="frame" x="623" y="14" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="HHP-Rz-H4b" eventType="touchUpInside" id="sq2-cb-fls"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vve-Xj-B0T"/>
+                    <connections>
+                        <outlet property="viewWeb" destination="QYn-V6-JXR" id="VY7-Qm-tcW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wwA-Ys-fc0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3668" y="-2569"/>
+        </scene>
+        <!--Reader View Controller - PDF-->
+        <scene sceneID="J6Z-Wo-LCG">
+            <objects>
+                <viewController title="PDF" id="TE0-jA-H2q" customClass="ReaderViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DaV-Fh-nEl">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ti3-WG-fx0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3668" y="-1379"/>
+        </scene>
+        <!--Navigation Controller - Players-->
+        <scene sceneID="GRl-uc-72g">
+            <objects>
+                <navigationController id="fiY-FQ-wa3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Players" id="D0k-XG-qyI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yU2-G4-C1k">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zaF-a6-XbN" kind="relationship" relationship="rootViewController" id="vrD-P6-7rx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pu2-be-bY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="-2568"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="ComposerViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ComposerViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="composerSearchBar" candidateClass="UISearchBar"/>
+            </relationships>
+        </class>
+        <class className="ReaderViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReaderViewController.h"/>
+        </class>
+        <class className="Score" superclassName="UIWebView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Score.h"/>
+        </class>
+        <class className="ScoreViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScoreViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="progress" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ScoreViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScoreViewController.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+        <class className="WebViewController" superclassName="ViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="outlet" name="viewWeb" candidateClass="Score"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
